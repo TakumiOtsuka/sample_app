@@ -102,7 +102,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   host = 'aqueous-fjord-58225.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
-  ActionMiler::Base.smtp_settings = {
+  ActionMailer::Base.smtp_settings = {
     :address => 'smtp.sendgrid.net',
     :port => '587',
     :authentication => :plain,
